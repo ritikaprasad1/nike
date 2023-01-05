@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cabin:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background-color: hsl(219, 60%, 24%);
+}
+nav{
+    
+ width: 100%;
+ height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 105px;
+    border-bottom: 1px solid rgba(255, 248, 248, 0.2);
+
+}
+nav img{
+    
+    height: 30px;
+}
+nav ul{
+   
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    transition: all ease-in-out 0.2s;
+}
+nav li:hover{
+    border-top:  4px solid #FD4444;
+}
+nav li{
+    padding: 28px 0px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: white;
+}
+/* nav span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}*/
+nav .search{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 15px; 
+    background-color:#FD4444;
+    color:white;
+    border: none;
+    margin-right: 18px;
+    
+}
+nav .cart{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color:white;
+    color:#37425A;
+    border: none;
+    
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+   
+    padding: 0px 100px;
+}
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-section{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.text-section h1{
+    font-family: 'Audiowide', cursive;
+    font-size: 80px;
+    font-weight: 800;
+}
+.text-section p{
+    font-size: 12px;
+    color: #839ed8;
+}
+.img-section img{
+    height: 500px;
+    margin-top: 60px;
+}
+.price-sect{
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    
+}
+.price-sect h3{
+    color: #D4A542;
+    font-size: 20px;
+    
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.price-sect h1{
+    color: white;
+}
+.price-sect span .point{
+    color: #FD4444;
+}
+
+.main2{
+    width:100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main2  {
+  display: flex;
+  height: 140px;
+}
+.main2 div{
+    width: 220px;
+   
+    display: flex;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.main2 p {
+    color: grey;
+    font-size: 13px;
+}
+.image {
+    display: flex;
+    align-items: center;
+    
+}
+.image img{
+ height: 60px;
+}
+.main2 div .text{
+    display: flex;
+    flex-direction: column;
+}
+.main2 .num{
+    width: 200px;
+    background:none;
+    text-decoration: underline;
+    color: white;
+    
+}
+.main2 .num p{
+    color: white;
+    font-size: 20px;
+}
+.main2 .text button{
+    width: 40px;
+    margin-top: 10px;
+    align-self: flex-end;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    
+    
+}
+#im5{
+   transform: rotate(-20 deg);
+}
+#im4{
+    transform: rotate(-20deg);
+}
+@media(max-width: 768px)
+{
+    nav li{
+       display: none
+    }
+    nav .cart{
+        display: none;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-section h1{
+        margin-top: 40px;
+        font-size: 70px;
+    }
+    .price-sect{
+        display: none;
+    }
+    .main2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .main2 div{
+        display: flex;
+       margin-bottom: 20px;
+       margin-right: 20px;
+        flex-wrap: wrap;
+    }
+    .main2 .text button{
+        height: 50px;
+        width: 50px;
+        transition: all ease-in-out 0.2s;
+    }
+    .main2 .text button:hover{
+        border: 2px solid #88a0d4;
+        
+    }
+    .main2 .text{
+        line-height: 22px;
+    }
+    
+}
